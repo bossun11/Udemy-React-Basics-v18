@@ -1,9 +1,18 @@
 import { useState } from "react";
 
-const Child = (props) => {
+const Child = ({ state, setState }) => {
+
+  const incriment = () => {
+    setState(prev => {
+      const newState = { value: prev.value + 1 };
+      return newState;
+    });
+  }
+
   return (
     <>
-      <span>{props.state.value}</span>
+      <span>{state.value}</span>
+      <button onClick={incriment}>+</button>
     </>
   );
 };
@@ -14,7 +23,7 @@ const Example = () => {
   return (
     <>
       <div>
-        <Child state={state}/>
+        <Child state={state} setState={setState}/>
       </div>
     </>
   );
