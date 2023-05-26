@@ -1,6 +1,6 @@
 import { Item } from "./Item";
 
-const List = ({todos, deleteTodo}) => {
+const List = ({todos, deleteTodo, updateTodo}) => {
 
     const complete = (id) => {
         deleteTodo(id)
@@ -10,7 +10,7 @@ const List = ({todos, deleteTodo}) => {
         <div>
             {todos.map(todo => {
                 return (
-                    <Item key={todo.id} todo={todo} complete={complete} />
+                    <Item key={todo.id} todo={todo} complete={complete} updateTodo={updateTodo} />
                 )
             })}
         </div>
