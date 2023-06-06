@@ -13,10 +13,9 @@
       "completed": false
     },
     {
-      "id": "f2c38014-e2df-40ae-ac93-36303b8771ce",
+      "id": 94145,
       "content": "買い物",
-      "editing": false,
-      "completed": false
+      "editing": false
     }
   ],
   "user": [
@@ -24,21 +23,29 @@
       "id": 1,
       "username": "hoge太郎",
       "age": 20,
-      "hobbies": ["サッカー", "野球"],
+      "hobbies": [
+        "サッカー",
+        "野球"
+      ],
       "premiumAccount": true
     },
     {
       "id": 2,
       "username": "fuga太郎",
       "age": 17,
-      "hobbies": ["カメラ"],
+      "hobbies": [
+        "カメラ"
+      ],
       "premiumAccount": false
     },
     {
       "id": 3,
       "username": "piyo次郎",
       "age": 50,
-      "hobbies": ["筋トレ", "水泳"],
+      "hobbies": [
+        "筋トレ",
+        "水泳"
+      ],
       "premiumAccount": true
     }
   ]
